@@ -1,5 +1,47 @@
 .mondrian {
+  display: grid;
+  grid-template-rows: .8fr 1fr .7fr;
+  grid-template-columns: 1fr 3fr .5fr;
+  grid-template-areas:
+    "red white white"
+    "white-two white white"
+    "blue white-three yellow";
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
   background-color: black;
   width: 500px;
   height: 500px;
-}`
+}
+
+.red {
+  grid-area: red;
+  background-color: #E72615;
+ }
+ 
+ .blue {
+  grid-area: blue;
+  background-color: #082BB8;
+ }
+ 
+ .yellow {
+  grid-area: yellow;
+  background-color: #E9D443;
+ }
+ 
+ .white {
+  grid-area: white;
+ }
+ 
+ .white-two {
+  grid-area: white-two;
+ }
+ 
+ .white-three {
+  grid-area: white-three;
+ }
+ 
+ .white,
+ .white-two,
+ .white-three {
+  background-color: #F9F8FC;
+ }
